@@ -1,0 +1,3 @@
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^cinema.com [NC]
+#RewriteRule ^(.*)$ http://dev.cinema.com/$1 [L,R=301]

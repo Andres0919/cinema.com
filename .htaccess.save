@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^cinema.com [NC]
+RewriteRule ^(.*)$ http://www
+.cinema.com/$1 [L,R=301]
