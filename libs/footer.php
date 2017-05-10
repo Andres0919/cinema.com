@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/customer.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/customer.css" rel="stylesheet">
 </head>
 <body>
-
-
 <footer class="footer-bs">
     <div class="row">
         <div class="col-md-3 footer-brand animated fadeInLeft">
@@ -59,7 +57,7 @@
     </div>
 </footer>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

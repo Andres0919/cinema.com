@@ -1,18 +1,17 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sign Up</title>
-</head>
-<body>
-    <?php include("header.php");?>
+<?php require("../libs/manager.php");
+$manager = new Manager();
+$manager->setTitle('sign up');
+$manager->startSession();
+$manager->header();
 
-    <div class="jumbotron container">
+?>
+
+<div class="jumbotron container">
         <div class="span6  text-center ">
             <div class="area ">
-                <form class="form-horizontal text-info" method="post" action="checkSignUp.php">
+                <form class="form-horizontal text-info" method="post" action="../controller/checkSignup.php">
                     <div class="heading">
-                        <h4 class="form-heading">Sign Up</h4>
+                    <h4 class="form-heading">Sign Up</h4>
                     </div>
 
                     <div class="control-group">
@@ -67,7 +66,6 @@
             </div>
         </div>
     </div>
-
-    <?php include("footer.php");?>
-</body>
-</html>
+<?php
+$manager->footer();
+?>

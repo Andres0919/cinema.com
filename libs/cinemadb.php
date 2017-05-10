@@ -6,15 +6,13 @@
  * Time: 05:35 PM
  */
 
-namespace cinemadb;
-
 class cinemadb
 {
-    public $host = 'localhost';
-    public $user = 'root';
-    public $pass = 'andres';
-    public $db = 'promocinal';
-    public $connection = null;
+    private $host = 'localhost';
+    private $user = 'root';
+    private $pass = 'andres';
+    private $db = 'promocinal';
+    private $connection = null;
 
     function __construct() {
 
@@ -26,6 +24,7 @@ class cinemadb
         if ($this->connection->connect_error) {
             die("Connection failed: " . $this->connection->connect_error);
         }
+        return $this->connection;
     }
 
     public function runQuery($query)

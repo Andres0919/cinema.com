@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/media.ico"/>
+    <title><?php echo $this->getTitle(); ?></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/media.ico"/>
   </head>
   <body>
     <nav class="navbar navbar-inverse bs-dark">
@@ -17,9 +18,8 @@
         <a class="navbar-brand" href="index.php">Promocinal</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
-        <?php session_start() ?>
         <?php if(!isset($_SESSION['user'])){?>
-          <form class="navbar-form navbar-right" action="checkLogin.php" method="POST">
+          <form class="navbar-form navbar-right" action="../controller/checkLogin.php" method="POST">
             <div class="form-group">
               <input type="text" placeholder="Username" class="form-control" name="user" REQUIRED>
             </div>
@@ -27,7 +27,7 @@
               <input type="password" placeholder="Password" class="form-control" name="pass" REQUIRED>
             </div>
             <input type="submit" class="btn btn-success" value="LOG IN" name="SignIn">
-            <a href="signUp.php" class="btn btn-default">SIGN UP</a>
+            <a href="signup.php" class="btn btn-default">SIGN UP</a>
           </form>
         <?php }else{?>
       </div><!--/.navbar-collapse -->
@@ -55,7 +55,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle navbar-img" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <?php echo $_SESSION['name']; ?>
+              <?php echo $_SESSION['user']['name']; ?>
               <img src="http://placehold.it/150x150" class="img-circle" alt="Profile Image" />
             </a>
             <ul class="dropdown-menu">
@@ -63,7 +63,7 @@
               <li><a href="#">Reservations</a></li>
               <li><a href="#">Followers</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="logout.php">Log Out</a></li>
+              <li><a href="../controller/logout.php">Log Out</a></li>
             </ul>
           </li>
         </ul>
@@ -71,12 +71,7 @@
       <?php }?>
     </nav>
 
-
-
-
-
-
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
