@@ -17,15 +17,14 @@
         <p>your card is : <?php echo $_SESSION['user']['card'] ?></p><br/>
         <p>your age is : <?php echo $_SESSION['user']['age'] ?></p><br/>
         <p>your email is : <?php echo $_SESSION['user']['email'] ?></p><br/>
-        <p>and your role is : <?php switch($_SESSION['user']['role']){
-                case 1: echo "Client";
-                break;
-                case 2: echo "Admin";
-                break;
-                case 3: echo "Employer";
-                break;
-            }
-              ?></p><br/>
+        <p>and your role is : <?php switch($_SESSION['user']['roles_id']){
+                                        case 1: echo "Client";
+                                        break;
+                                        case 2: echo "Admin";
+                                        break;
+                                        case 3: echo "Employer";
+                                        break;
+                                    }?></p><br/>
 
 
      <?php

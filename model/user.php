@@ -14,33 +14,24 @@ class user extends cinemadb
     private $con;
 
 
-    /**
-     * @param mixed $name
-     */
     public function setName($name)
     {
         $this->name = $name;
     }
 
-    /**
-     * @param mixed $last
-     */
+
     public function setLast($last)
     {
         $this->last = $last;
     }
 
-    /**
-     * @param mixed $card
-     */
+
     public function setCard($card)
     {
         $this->card = $card;
     }
 
-    /**
-     * @param mixed $email
-     */
+
     public function setEmail($email)
     {
         $this->email = $email;
@@ -65,8 +56,8 @@ class user extends cinemadb
 
     public function login(){
 
-        $result = $this->runQuery("SELECT * FROM users WHERE username='$this->username'");
-        return $result;
+        $result = $this->runQuery("SELECT * FROM users u INNER JOIN permissions p ON u.id = p.users_id WHERE  u.username='$this->username'");
+        return mysqli_fetch_array($result, MYSQLI_BOTH);
 
     }
 
@@ -75,6 +66,13 @@ class user extends cinemadb
         session_start();
         session_unset();
         session_destroy();
+    }
+
+    public function find(){
+
+        $result = $this->runQuery("SELECT * FROM users WHERE username='$this->username'");
+        return mysqli_fetch_array($result, MYSQLI_BOTH);
+
     }
 
     public function signup(){
@@ -89,10 +87,6 @@ class user extends cinemadb
         return $result;
     }
 
-    public function roleUser($idUser){
 
-        $result = $this->runQuery("SELECT * FROM permissions WHERE users_id=$idUser");
-        return $result;
-    }
 
 }

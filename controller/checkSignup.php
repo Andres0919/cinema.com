@@ -21,31 +21,23 @@ $result = $user->login();
 if(mysqli_num_rows($result) == 0){
 
     $insert = $user->signup();
-    $result = $user->login();
-
-    if(mysqli_num_rows($result) != 0){
-
-        $data =  mysqli_fetch_array($result, MYSQLI_BOTH);
-
-        $rolUser = $user->insertRoleUser($data['id']);
-
-        $role = $user->roleUser($data['id']);
-        $roleData =  mysqli_fetch_array($role, MYSQLI_BOTH);
-
-        session_start();//inicia la sesion
-        $_SESSION['user'] = $data;
-        $_SESSION['user']['role'] = $roleData['roles_id'];
-        $user = null;
-
-        header("location:../views/");
-
-    }else{
+    if(!$insert){
 
         echo "<script language= 'javascript'>";
         echo "alert('Error en los datos');";
         echo "</script>";
         header("refresh:0; url=../views/signup.php");
     }
+
+    $result = $user->find();
+    $rolUser = $user->insertRoleUser($result['id']);
+    $data =  $user->login();
+    session_start();//inicia la sesion
+    $_SESSION['user'] = $data;
+    $user = null;
+
+    header("location:../views/");
+
 }else{
 
     echo "<script language= 'javascript'>";
