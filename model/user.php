@@ -47,6 +47,7 @@ class user extends cinemadb
     }
 
 
+
     public function setUsername($username)
     {
         $this->username = $username;
@@ -82,9 +83,16 @@ class user extends cinemadb
         return $result;
     }
 
-    public function roleUser($id){
+    public function insertRoleUser($id){
 
-        $rol = $this->runQuery("INSERT INTO permissions(user_id, roles_id) VALUES ('$id', '1')");
+        $result = $this->runQuery("INSERT INTO permissions( users_id, roles_id) VALUES ($id, 1)");
+        return $result;
+    }
+
+    public function roleUser($idUser){
+
+        $result = $this->runQuery("SELECT * FROM permissions WHERE users_id=$idUser");
+        return $result;
     }
 
 }
