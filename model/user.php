@@ -61,13 +61,6 @@ class user extends cinemadb
 
     }
 
-    public function logout(){
-
-        session_start();
-        session_unset();
-        session_destroy();
-    }
-
     public function find(){
 
         $result = $this->runQuery("SELECT * FROM users WHERE username='$this->username'");

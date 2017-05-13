@@ -58,9 +58,9 @@
               <img src="http://placehold.it/150x150" class="img-circle" alt="Profile Image" />
             </a>
             <ul class="dropdown-menu">
-              <li><a href="profile.php">Profile</a></li>
+              <li><a href="../views/profile.php">Profile</a></li>
               <li><a href="#">Reservations</a></li>
-              <li><a href="#">Followers</a></li>
+              <li><a href="">name="salir">Followers</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="../controller/logout.php">Log Out</a></li>
             </ul>

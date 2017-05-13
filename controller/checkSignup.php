@@ -18,7 +18,7 @@ $user->setLast($last);
 $user->setCard($card);
 $result = $user->login();
 
-if(mysqli_num_rows($result) == 0){
+if(!$result){
 
     $insert = $user->signup();
     if(!$insert){

@@ -1,8 +1,7 @@
 <?php
 
-require('../model/user.php');
+    session_start();
+    session_unset();
+    session_destroy();
 
-$user = new user();
-$user->logout();
-$user = null;
 header("location:../views/index.php");

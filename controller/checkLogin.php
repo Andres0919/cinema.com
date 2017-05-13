@@ -7,11 +7,12 @@ $password = $_POST['pass'];
 
 $user->connect();
 $user->setUsername($username);
-$result = $user->login();
 
-if (mysqli_num_rows($result) != 0) {
+$data = $user->login();
 
-   $data = mysqli_fetch_array($result, MYSQLI_BOTH);
+if ($data) {
+
+
    if($data['password'] == $password){
 
      session_start();//inicia la sesion
