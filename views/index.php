@@ -11,8 +11,15 @@ class Index extends Manager
         public  function getContent()
         {
             ?>
+            <header>
+                <div class="container">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Welcome To Promocinal!</div>
+                        <div class="intro-heading">What would you like to watch today?</div>
+                    </div>
+                </div>
+            </header>
             <div class="container jumbotron">
-                <H1>This is HOME</H1>
                 <?php if (isset($_SESSION['user'])) { ?>
 
                     <h2>Welcome Mr <?php echo $_SESSION['user']['username'] ?> </h2>

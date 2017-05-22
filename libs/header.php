@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title><?php echo $this->getTitle(); ?></title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/agency.css" rel="stylesheet">
+    <link href="../css/customer.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/media.ico"/>
   </head>
   <body>
@@ -33,15 +35,14 @@
       </div><!--/.navbar-collapse -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+          <li <?php if( $this->getTitle() == "Promocinal" ){ ?>  class="active" <?php } ?> ><a href="index.php">Home<span class="sr-only">(current)</span></a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explores <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Cinema</a></li>
-              <li><a href="#">Premiere</a></li>
+              <li><a href="#">Schedule</a></li>
               <li><a href="#">Billboard</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Cinemas</a></li>
             </ul>
           </li>
         </ul>
@@ -53,17 +54,23 @@
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle navbar-img" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <?php echo $_SESSION['user']['name']; ?>
-              <img src="http://placehold.it/150x150" class="img-circle" alt="Profile Image" />
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="../views/profile.php">Profile</a></li>
-              <li><a href="#">Reservations</a></li>
-              <li><a href="">name="salir">Followers</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="../controller/logout.php">Log Out</a></li>
-            </ul>
+          <a href="#" class="dropdown-toggle navbar-img" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <?php echo $_SESSION['user']['name']; ?>
+          <img src="http://placehold.it/150x150" class="img-circle" alt="Profile Image" />
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../views/profile.php">Profile</a></li>
+            <li><a href="#">Reservations</a></li>
+            <?php if ($_SESSION['user']['roles_id'] != 1){ ?>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">movies</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Config</a></li>
+            <?php } ?>
+          <li role="separator" class="divider"></li>
+          <li><a href="../controller/logout.php">Log Out</a></li>
+          </ul>
           </li>
         </ul>
       </div>
