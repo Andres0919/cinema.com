@@ -6,6 +6,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/agency.css" rel="stylesheet">
     <link href="../css/customer.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/media.ico"/>
   </head>
   <body>
