@@ -26,7 +26,7 @@ if(!$result){
         echo "<script language= 'javascript'>";
         echo "alert('Error en los datos');";
         echo "</script>";
-        header("refresh:0; url=../views/signup.php");
+        header("refresh:0; url=views/signupView.php");
     }
 
     $result = $user->find();
@@ -43,5 +43,5 @@ if(!$result){
     echo "<script language= 'javascript'>";
     echo "alert('Ya hay registros con esos datos');";
     echo "</script>";
-    header("refresh:0; url=../views/signup.php");
+    header("refresh:0; url=../views/signupView.php");
 }

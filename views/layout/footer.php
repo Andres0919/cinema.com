@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/customer.css" rel="stylesheet">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/customer.css" rel="stylesheet">
 </head>
 <body>
 <footer class="footer-bs">

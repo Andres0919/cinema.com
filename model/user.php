@@ -1,5 +1,5 @@
 <?php
-require('../libs/cinemadb.php');
+require 'libs/cinemadb.php';
 
 
 class user extends cinemadb
