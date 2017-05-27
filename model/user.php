@@ -1,6 +1,6 @@
 <?php
-require 'libs/cinemadb.php';
-
+require_once 'libs/cinemadb.php';
+use Libs\cinemadb;
 
 class user extends cinemadb
 {
@@ -11,7 +11,7 @@ class user extends cinemadb
     private $last;
     private $card;
     private $email;
-    private $con;
+    private $rol = 1;
 
 
     public function setName($name)
@@ -49,19 +49,14 @@ class user extends cinemadb
         $this->password = $password;
     }
 
-    public function connection(){
-
-      $this->con =  $this->connect();
-    }
-
     public function login(){
 
-        $result = $this->runQuery("SELECT * FROM users u INNER JOIN permissions p ON u.id = p.users_id WHERE  u.username='$this->username'");
+        $result = $this->runQuery("SELECT * FROM users u INNER JOIN permissions p ON u.id = p.users_id INNER JOIN roles r ON p.roles_id=r.id WHERE  u.username='$this->username'");
         return mysqli_fetch_array($result, MYSQLI_BOTH);
 
     }
 
-    public function find(){
+    public function findUser(){
 
         $result = $this->runQuery("SELECT * FROM users WHERE username='$this->username'");
         return mysqli_fetch_array($result, MYSQLI_BOTH);
@@ -76,7 +71,7 @@ class user extends cinemadb
 
     public function insertRoleUser($id){
 
-        $result = $this->runQuery("INSERT INTO permissions( users_id, roles_id) VALUES ($id, 1)");
+        $result = $this->runQuery("INSERT INTO permissions( users_id, roles_id) VALUES ($id, $this->rol)");
         return $result;
     }
 

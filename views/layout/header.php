@@ -56,7 +56,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
           <a href="#" class="dropdown-toggle navbar-img" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            <?php echo $this->getUser()['name'] ?>
+            <?php echo $this->getUser()[3] ?>
           <img src="http://placehold.it/150x150" class="img-circle" alt="Profile Image" />
           </a>
           <ul class="dropdown-menu">
@@ -65,9 +65,12 @@
             <?php if ($this->getUser()['roles_id'] != 1){ ?>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">movies</a></li>
+            <?php if ($this->getUser()['roles_id'] == 3){ ?>
                 <li role="separator" class="divider"></li>
+                <li><a href="#">Emloyer</a></li>
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">Config</a></li>
+              <?php } ?>
             <?php } ?>
           <li role="separator" class="divider"></li>
           <li><a href="/index.php?controller=user&action=logout">Log Out</a></li>

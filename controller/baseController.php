@@ -17,6 +17,7 @@ class baseController
 
         if(isset($_GET['action']))  $this->default_action = $_GET['action'];
 
+
     }
 
     public function startSession(){
@@ -34,7 +35,7 @@ class baseController
 
     }
 
-    public function setSession($user){
+    public function setSessionUser($user){
 
         $_SESSION['user'] = $user;
 
@@ -51,10 +52,21 @@ class baseController
         $this->title = $title;
     }
 
+    public function actionValidate(){
+
+        if(in_array($this->default_action, $this->private_actions) && !$this->getUser())  $this->redirect("/");
+    }
+
     public function header(){
 
+        $this->actionValidate();
         if($this->actionExist() && $this->viewExist()) include('views/layout/header.php');
 
+    }
+
+    public function containerMenu(){
+
+        include('views/layout/containerMenu.php');
     }
 
     public function footer(){
@@ -71,7 +83,6 @@ class baseController
         $parameters = isset($view[1])?$view[1]:[];
         $path = 'views/'.$view[0].'View.php';
         if(!$this->viewExist()) die('view ' . $path . ' no exist');
-        if(in_array($this->default_action, $this->private_actions) && !$this->getUser())  $this->redirect("/");
         include $path;
     }
 
@@ -104,6 +115,27 @@ class baseController
 
         header("refresh:0; url=/index.php" . $url);
         exit;
+    }
+
+    public function getCookietSession(){
+
+        if (isset($_COOKIE)) {
+            return $_COOKIE;
+        }
+        return false;
+    }
+
+    public function setCookieSession(){
+
+        setcookie($this->getUser()['username'], date("F j, Y, g:i a"));
+    }
+
+    public  function getLastSession(){
+
+        $cookie = $this->getCookietSession();
+
+        if(isset($cookie[$this->getUser()['username']])) return $cookie[$this->getUser()['username']];
+        return false;
     }
 
 

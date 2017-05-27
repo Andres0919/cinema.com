@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: andres
- * Date: 24/04/17
- * Time: 05:35 PM
- */
+namespace Libs;
 
 class cinemadb
 {
