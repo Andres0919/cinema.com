@@ -13,6 +13,11 @@ class movie extends cinemadb
     private $dateFinish;
     private $status;
 
+    function __construct() {
+
+        $this->connect();
+    }
+
     public function getName()
     {
         return $this->name;

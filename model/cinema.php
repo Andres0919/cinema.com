@@ -14,6 +14,11 @@ class cinema extends cinemadb
     private $preferencial2D;
     private $preferencial3D;
 
+    function __construct() {
+
+        $this->connect();
+    }
+
     public function getCity()
     {
         return $this->city;

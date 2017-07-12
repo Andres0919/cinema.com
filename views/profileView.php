@@ -10,9 +10,6 @@
                                 <div class="col-xs-10 col-sm-8">
                                     <h2 class="text-capitalize text-success"><?php echo $this->getUser()['3']  ." ". $this->getUser()['last_name']; ?></h2>
                                     <p><strong>Role: </strong> <?php echo $this->getUser()['13']?>. </p>
-                                    <?php if($this->getLastSession()){?>
-                                    <p><strong>Last Session: </strong> <?php echo $this->getLastSession()?> </p>
-                                    <?php } ?>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 text-center">
                                     <figure>

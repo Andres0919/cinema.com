@@ -13,13 +13,12 @@ class cinemaController extends  baseController{
     public function cinemaAction()
     {
         $cinema = new cinema();
-        $cinema->connect();
         return array('cinema', $cinema->getCinema());
     }
 
     public function editAction(){
 
-        $this->title = 'Cinema Edit';
+        $this->setTitle('Cinema Edit');
         return array('editCinema');
     }
 
@@ -36,7 +35,6 @@ class cinemaController extends  baseController{
         $preferencial2D = $_POST['preferencial2D'];
         $preferencial3D = $_POST['preferencial3D'];
 
-        $cinema->connect();
         $cinema->setName($name);
         $cinema->setAddress($address);
         $cinema->setCity($city);

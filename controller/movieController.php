@@ -9,9 +9,7 @@ class movieController extends  baseController{
     public $default_action = 'movie';
     public $private_actions = array('movie','billboard','schedule','reserve','config');
 
-
-    public function movieAction()
-    {
+    public function movieAction(){
 
         return array('movie',array(
             'hola'=> 'probando movie'));
@@ -19,33 +17,31 @@ class movieController extends  baseController{
 
     public function billboardAction(){
 
-        $this->title = 'Billboard';
+        $this->setTitle('Billboard');
         $movie = new movie();
-        $movie->connect();
         return array('billboard', $movie->getMovie());
     }
 
     public function scheduleAction(){
 
-        $this->title = 'Schedule';
+        $this->setTitle('Schedule');
         return array('schedule',array(
             'hola'=> 'probando movie'));
     }
 
     public function reserveAction(){
 
-        $this->title = 'Reserve';
+        $this->setTitle('Reserve');
         return array('reserve',array(
             'hola'=> 'probando movie'));
     }
 
     public function configAction(){
 
-        $this->title = 'Config';
+        $this->setTitle('Config');
         return array('config',array(
             'hola'=> 'probando movie'));
     }
-
 }
 
 $manager = new movieController();

@@ -9,14 +9,13 @@ class indexController extends  baseController{
 
     public function indexAction()
     {
-        //controller
         return array('index',array(
             'hola'=> 'probando bar'));
     }
 
     public function signupAction(){
 
-        $this->title = 'Sign up';
+        $this->setTitle('Sign up');
         return array('signup');
     }
 

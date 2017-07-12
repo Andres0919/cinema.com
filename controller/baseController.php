@@ -38,7 +38,6 @@ class baseController
     public function setSessionUser($user){
 
         $_SESSION['user'] = $user;
-
     }
 
     public function getTitle()
@@ -113,31 +112,9 @@ class baseController
 
     public function redirect($url){
 
-        header("refresh:0; url=/index.php" . $url);
+        header("refresh:0; url=/index.php?" . $url);
         exit;
     }
-
-    public function getCookietSession(){
-
-        if (isset($_COOKIE)) {
-            return $_COOKIE;
-        }
-        return false;
-    }
-
-    public function setCookieSession(){
-
-        setcookie($this->getUser()['username'], date("F j, Y, g:i a"));
-    }
-
-    public  function getLastSession(){
-
-        $cookie = $this->getCookietSession();
-
-        if(isset($cookie[$this->getUser()['username']])) return $cookie[$this->getUser()['username']];
-        return false;
-    }
-
 
     public function render(){
 

@@ -8,7 +8,7 @@ class userController extends  baseController{
 
     public $title = 'Promocinal';
     public $default_action = 'profile';
-    public $private_actions = array('profile', 'reserves');
+    public $private_actions = array('profile', 'reservations');
 
     public function loginAction()
     {
@@ -17,7 +17,6 @@ class userController extends  baseController{
         $username = $_POST['user'];
         $password = $_POST['pass'];
 
-        $user->connect();
         $user->setUsername($username);
         $data = $user->findUser();
 
@@ -25,8 +24,8 @@ class userController extends  baseController{
 
             if($data['password'] == $password){
 
-                $this->setSessionUser( $user->login());
-                $this->redirect('?controller=user&action=profile');
+                $this->setSessionUser($user->login());
+                $this->redirect('controller=user&action=profile');
                 exit;
             }else{
 
@@ -40,45 +39,41 @@ class userController extends  baseController{
             echo "<script language= 'javascript'>";
             echo "alert('incorrect username ');";
             echo "</script>";
-            $this->redirect('?controller=index&action=signup');
+            $this->redirect('controller=index&action=signup');
             exit;
         }
     }
 
-    public function logoutAction()
-    {
-        $this->setCookieSession();
+    public function logoutAction(){
+
         session_unset();
         session_destroy();
-
         $this->redirect('/');
         exit;
     }
 
     public function profileAction(){
 
-        $this->title = 'Profile';
+        $this->setTitle('Profile');
         $movie = new movie();
-        $movie->connect();
         return array('profile');
     }
 
     public function reservationsAction(){
 
-        $this->title = 'Reservations';
+        $this->setTitle('Reservations');
         return array('reservations');
     }
 
     public function editAction(){
 
-        $this->title = 'User Edit';
+        $this->setTitle('User Edit');
         return array('editUser');
     }
 
     public function signupAction(){
 
         $user = new user();
-
         $username = $_POST['user'];
         $pass = $_POST['pass'];
         $email = $_POST['email'];
@@ -86,7 +81,6 @@ class userController extends  baseController{
         $last = $_POST['last'];
         $card = $_POST['card'];
 
-        $user->connect();
         $user->setUsername($username);
         $user->setPassword($pass);
         $user->setEmail($email);
@@ -106,7 +100,7 @@ class userController extends  baseController{
             }
             $user->insertRoleUser($user->findUser()['id']);
             $this->setSessionUser( $user->login());
-            $this->redirect("?controller=user&action=profile");
+            $this->redirect("controller=user&action=profile");
             exit;
 
         }else{
@@ -114,9 +108,16 @@ class userController extends  baseController{
             echo "<script language= 'javascript'>";
             echo "alert('exist data our database');";
             echo "</script>";
-            $this->redirect('?controller=index&action=signup');
+            $this->redirect('controller=index&action=signup');
             exit;
         }
+    }
+
+    public function clientsAction(){
+
+        $this->setTitle('Clients');
+        $user = new user();
+        return array('config',$user->getUsers());
     }
 }
 

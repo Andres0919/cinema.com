@@ -14,6 +14,11 @@ class user extends cinemadb
     private $rol = 1;
 
 
+    function __construct() {
+
+        $this->connect();
+    }
+
     public function setName($name)
     {
         $this->name = $name;
@@ -75,6 +80,12 @@ class user extends cinemadb
         return $result;
     }
 
+    public function getUsers(){
+
+        $result = $this->runQuery("SELECT * FROM users u INNER JOIN permissions p ON u.id = p.users_id INNER JOIN roles r ON p.roles_id=r.id WHERE  p.roles_id=1");
+        return $result;
+
+    }
 
 
 }
