@@ -56,7 +56,7 @@ class user extends cinemadb
 
     public function login(){
 
-        $result = $this->runQuery("SELECT * FROM users u INNER JOIN permissions p ON u.id = p.users_id INNER JOIN roles r ON p.roles_id=r.id WHERE  u.username='$this->username'");
+        $result = $this->runQuery("SELECT * FROM users u INNER JOIN roles r ON u.roles_id = r.id WHERE  u.username='$this->username'");
         return mysqli_fetch_array($result, MYSQLI_BOTH);
 
     }
@@ -73,19 +73,5 @@ class user extends cinemadb
         $result = $this->runQuery("INSERT INTO users( username, password, name, last_name, card, email) VALUES ('$this->username', '$this->password', '$this->name', '$this->last', '$this->card', '$this->email')");
         return $result;
     }
-
-    public function insertRoleUser($id){
-
-        $result = $this->runQuery("INSERT INTO permissions( users_id, roles_id) VALUES ($id, $this->rol)");
-        return $result;
-    }
-
-    public function getUsers(){
-
-        $result = $this->runQuery("SELECT * FROM users u INNER JOIN permissions p ON u.id = p.users_id INNER JOIN roles r ON p.roles_id=r.id WHERE  p.roles_id=1");
-        return $result;
-
-    }
-
 
 }

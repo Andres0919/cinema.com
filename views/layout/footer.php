@@ -39,8 +39,45 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+
+        <!--[if lt IE 9]-->
+        <script src="js/respond.min.js"></script>
+        <script src="js/excanvas.min.js"></script>
+        <script src="js/ie8.fix.min.js"></script>
+        <![endif]-->
+        <!-- BEGIN CORE PLUGINS -->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/js.cookie.min.js" type="text/javascript"></script>
+        <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="js/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="js/jquery.cubeportfolio.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="js/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="js/portfolio-1.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="js/layout.min.js" type="text/javascript"></script>
+        <script src="js/demo.min.js" type="text/javascript"></script>
+        <script src="js/quick-sidebar.min.js" type="text/javascript"></script>
+        <script src="js/quick-nav.min.js" type="text/javascript"></script>
+        <!-- END THEME LAYOUT SCRIPTS -->
+        <script>
+            $(document).ready(function()
+            {
+                $('#clickmewow').click(function()
+                {
+                    $('#radio1003').attr('checked', 'checked');
+                });
+            })
+        </script>
+
         <script src="js/script.js"></script>
     </body>
 </html>

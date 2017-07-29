@@ -1,29 +1,46 @@
-<div class="container jumbotron">
+<div class="container-fluid">
     <div class="row">
-        <?php $this->containerMenu() ?>
-        <div class="col-sm-10 col-md-10">
-            <div class="well">
+        <div class="col-sm-12">
+            <div class="col-md-1">
+            </div>
+            <div class="jumbotron col-md-7 margin-top-15 margin-bottom-15">
+                <div class="row margin-top-15">
+                    <div class="col-xs-12 col-md-3 text-center">
+                        <img src="img/download%20(1).jpg" alt="" height="200px" width="150px">
+                    </div>
+                    <div class="col-xs-10 col-md-6">
+                        <ul class="list list-unstyled">
+                            <li><strong>Title: </strong>Loream</li>
+                            <br />
+                            <li><strong>Title: </strong>Loream</li>
+                            <br />
+                            <li><strong>Title: </strong>Loream</li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
-                        <div class="profile">
-                            <div class="col-sm-12">
-                                <div class="col-xs-12 col-sm-8">
-
-                                </div>
-                                <div class="col-xs-12 col-sm-4 text-center">
-
-                                </div>
-                            </div>
-                            <div class="col-xs-12 divider text-center">
-                                <div class="col-xs-12 col-sm-4 emphasis">
-                                </div>
-                                <div class="col-xs-12 col-sm-4 emphasis">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-xs-12">
+                        <p style="font-size: small"><strong>Sinopsis: </strong>LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream LOream </p>
                     </div>
                 </div>
             </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-3 text-center jumbotron margin-top-15">
+                <h2>TODAY</h2>
+                <ul class="list list-unstyled">
+                    <li>Morning</li>
+                    <li>Afternoon</li>
+                    <li>Evening</li>
+                </ul>
+            </div>
         </div>
+    </div>
+</div>
+<div class="col-xs-12 divider text-center">
+    <div class="col-xs-12 col-sm-4 emphasis">
+    </div>
+    <div class="col-xs-12 col-sm-4 emphasis">
+    </div>
     </div>
 </div>

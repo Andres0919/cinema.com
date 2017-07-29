@@ -1,7 +1,7 @@
-<div class="container jumbotron">
+<div class="container jumbotron fix-container">
     <div class="row">
-        <?php $this->containerMenu() ?>
-        <div class="col-sm-10 col-md-10">
+        <?php $this->sidebar() ?>
+        <div class="col-sm-10 col-md-8">
             <div class="well">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">

@@ -1,5 +1,6 @@
 <?php
 require "baseController.php";
+require 'model/movie.php';
 use Controller\baseController;
 
 class indexController extends  baseController{
@@ -9,8 +10,10 @@ class indexController extends  baseController{
 
     public function indexAction()
     {
-        return array('index',array(
-            'hola'=> 'probando bar'));
+        $movie = new movie();
+        return array('index', array(
+            'comming'=> $movie->getMovies()
+        ));
     }
 
     public function signupAction(){

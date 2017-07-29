@@ -6,25 +6,25 @@
     <title><?php echo $this->getTitle(); ?></title>
 
       <!-- BEGIN GLOBAL MANDATORY STYLES -->
-      <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
-<!--      <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />-->
+      <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
       <link href="css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
       <!-- END GLOBAL MANDATORY STYLES -->
       <!-- BEGIN PAGE LEVEL PLUGINS -->
+      <link href="css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
       <link href="css/bootstrap-fileinput.css" rel="stylesheet" type="text/css" />
       <!-- END PAGE LEVEL PLUGINS -->
       <!-- BEGIN THEME GLOBAL STYLES -->
       <link href="css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
-<!--      <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />-->
+      <link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
       <!-- END THEME GLOBAL STYLES -->
       <!-- BEGIN PAGE LEVEL STYLES -->
+      <link href="css/portfolio.min.css" rel="stylesheet" type="text/css" />
       <link href="css/profile.min.css" rel="stylesheet" type="text/css" />
       <!-- END PAGE LEVEL STYLES -->
       <!-- BEGIN THEME LAYOUT STYLES -->
       <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
-<!--      <link href="css/default.min.css" rel="stylesheet" type="text/css" id="style_color" />-->
       <!-- END THEME LAYOUT STYLES -->
       <!-- END HEAD -->
       <link href="css/customer.css" rel="stylesheet">
@@ -73,7 +73,7 @@
                                   <ul class="dropdown-menu dropdown-menu-default">
                                       <li>
                                           <a href="index.php?controller=user&action=profile">
-                                              <i class="icon-user"></i> My Profile </a>
+                                              <i class="fa fa-user"></i> My Profile </a>
                                       </li>
                                       <li>
                                           <a href="#">
@@ -88,7 +88,7 @@
                                       <li class="divider"> </li>
                                       <li>
                                           <a href="/index.php?controller=user&action=logout">
-                                              <i class="icon-key"></i> Log Out </a>
+                                              <i class="fa fa-power-off"></i> Log Out </a>
                                       </li>
                                   </ul>
                               </li>
@@ -114,12 +114,12 @@
                                   </a>
                               </li>
                               <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown  ">
-                                  <a href="#" class="color-nav"> Movies
+                                  <a href="index.php?controller=movie&action=movies" class="color-nav"> Movies
                                       <span class="arrow"></span>
                                   </a>
                               </li>
                               <li aria-haspopup="true" class="menu-dropdown classic-menu-dropdown ">
-                                  <a href="#" class="color-nav"> Find Theaters
+                                  <a href="index.php?controller=cinema&action=cinema" class="color-nav"> Find Theaters
                                       <span class="arrow"></span>
                                   </a>
                               </li>

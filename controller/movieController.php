@@ -5,7 +5,7 @@ use Controller\baseController;
 
 class movieController extends  baseController{
 
-    public $title = 'movie';
+    public $title = 'Movie';
     public $default_action = 'movie';
     public $private_actions = array('movie','billboard','schedule','reserve','config');
 
@@ -15,31 +15,10 @@ class movieController extends  baseController{
             'hola'=> 'probando movie'));
     }
 
-    public function billboardAction(){
+    public function moviesAction(){
 
-        $this->setTitle('Billboard');
-        $movie = new movie();
-        return array('billboard', $movie->getMovie());
-    }
-
-    public function scheduleAction(){
-
-        $this->setTitle('Schedule');
-        return array('schedule',array(
-            'hola'=> 'probando movie'));
-    }
-
-    public function reserveAction(){
-
-        $this->setTitle('Reserve');
-        return array('reserve',array(
-            'hola'=> 'probando movie'));
-    }
-
-    public function configAction(){
-
-        $this->setTitle('Config');
-        return array('config',array(
+        $this->setTitle("Movies");
+        return array('movies',array(
             'hola'=> 'probando movie'));
     }
 }

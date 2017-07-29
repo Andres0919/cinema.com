@@ -63,14 +63,14 @@ class baseController
 
     }
 
-    public function containerMenu(){
-
-        include('views/layout/containerMenu.php');
-    }
-
     public function footer(){
 
         include("views/layout/footer.php");
+    }
+
+    public function sidebar(){
+
+        include("views/layout/sidebar.php");
     }
 
     public function getAction(){

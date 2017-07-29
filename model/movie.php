@@ -88,10 +88,10 @@ class movie extends cinemadb
         $this->status = $status;
     }
 
-    public function getMovie(){
+    public function getMovies(){
 
-        $result = $this->runQuery("SELECT * FROM movies m INNER JOIN moviesType t ON  m.moviesType_id = t.id");
-        return $result;
+        $result = $this->runQuery("SELECT id, title FROM movies");
+        return mysqli_fetch_assoc($result);
 
     }
 

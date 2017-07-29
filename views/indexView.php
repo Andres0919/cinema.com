@@ -15,15 +15,15 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner carousel-home">
             <div class="item active">
-                <img src="img/cinema-22.jpg" alt="Los Angeles" class="image-index">
+                <img src="img/cinema-22.jpg" alt="Los Angeles" >
             </div>
 
             <div class="item">
-                <img src="img/header_bg.jpg" alt="Chicago">
+                <img src="img/film.jpg" alt="Chicago">
             </div>
 
             <div class="item">
-                <img src="img/media.ico" alt="New York">
+                <img src="img/film1.JPG" alt="New York">
             </div>
         </div>
 
@@ -38,11 +38,46 @@
         </a>
     </div>
     <br />
-    <h2 class="text-center">In Theaters</h2>
+    <h2 class="text-center">Comming Soon</h2>
+    <hr />
+    <br />
     <div class="jumbotron">
         <div class='row'>
             <div class='col-md-12'>
-                <div class="carousel slide media-carousel" id="media">
+                <div class="carousel slide media-carousel" id="media_comming_soon">
+                    <a data-slide="prev" href="#media_comming_soon" class="left carousel-control">‹</a>
+                    <div class="carousel-inner media-theaters">
+                        <div class="item  active">
+                            <div class="row">
+                                <?php $times = 0;?>
+                                <?php foreach($parameters as $movie){ ?>
+                                    <?php if($times%4 == 0 && $times != 0){?>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                    <?php } ?>
+                                <?php $times++ ?>
+                                <div class="col-md-3">
+                                    <a  href="#"><img alt="" src="img/file_image.jpg"></a>
+                                </div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                    </div>
+                    <a data-slide="next" href="#media_comming_soon" class="right carousel-control">›</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <h2 class="text-center">In Theaters</h2>
+    <hr />
+    <br />
+    <div class="jumbotron">
+        <div class='row'>
+            <div class='col-md-12'>
+                <div class="carousel slide media-carousel" id="media_in_theaters">
                     <div class="carousel-inner media-theaters">
                         <div class="item  active">
                             <div class="row">
@@ -93,17 +128,10 @@
                             </div>
                         </div>
                     </div>
-                    <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-                    <a data-slide="next" href="#media" class="right carousel-control">›</a>
+                    <a data-slide="prev" href="#media_in_theaters" class="left carousel-control">‹</a>
+                    <a data-slide="next" href="#media_in_theaters" class="right carousel-control">›</a>
                 </div>
             </div>
         </div>
-    </div>
-    <br />
-    <h2 class="text-center">Now Playing</h2>
-    <div class="jumbotron">
-
-        <?php echo $parameters['hola'];?>
-
     </div>
 </div>

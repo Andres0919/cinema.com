@@ -98,17 +98,4 @@ class cinema extends cinemadb
     {
         $this->preferencial3D = $preferencial3D;
     }
-
-    public function getCinema(){
-
-        $result = $this->runQuery("SELECT * FROM cinema ");
-        return $result;
-
-    }
-
-    public function insertCinema(){
-
-        $result = $this->runQuery("INSERT INTO cinema( name, address, city, status, 2Dgeneral, 3Dgeneral, 2Dpreferencial, 3Dpreferencial) VALUES ('$this->name', '$this->address', '$this->city', '$this->status', '$this->general2D', '$this->general3D', '$this->preferencial2D', '$this->preferencial3D')");
-        return $result;
-    }
 }

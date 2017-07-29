@@ -6,7 +6,6 @@ use Controller\baseController;
 
 class userController extends  baseController{
 
-    public $title = 'Promocinal';
     public $default_action = 'profile';
     public $private_actions = array('profile', 'reservations');
 
@@ -16,10 +15,10 @@ class userController extends  baseController{
         $user = new user();
         $username = $_POST['user'];
         $password = $_POST['pass'];
+        if(!isset($username) && !isset($password)) $this->redirect('/');
 
         $user->setUsername($username);
         $data = $user->findUser();
-
         if ($data) {
 
             if($data['password'] == $password){
@@ -28,18 +27,11 @@ class userController extends  baseController{
                 $this->redirect('controller=user&action=profile');
                 exit;
             }else{
-
-                echo "<script language= 'javascript'>";
-                echo "alert('incorrect password');";
-                echo "</script>";
                 $this->redirect('/');
-            };
+                exit;
+            }
         }else {
-
-            echo "<script language= 'javascript'>";
-            echo "alert('incorrect username ');";
-            echo "</script>";
-            $this->redirect('controller=index&action=signup');
+            $this->redirect('/');
             exit;
         }
     }
@@ -55,7 +47,6 @@ class userController extends  baseController{
     public function profileAction(){
 
         $this->setTitle('Profile');
-        $movie = new movie();
         return array('profile');
     }
 
@@ -63,12 +54,6 @@ class userController extends  baseController{
 
         $this->setTitle('Reservations');
         return array('reservations');
-    }
-
-    public function editAction(){
-
-        $this->setTitle('User Edit');
-        return array('editUser');
     }
 
     public function signupAction(){
@@ -79,22 +64,19 @@ class userController extends  baseController{
         $email = $_POST['email'];
         $name = $_POST['name'];
         $last = $_POST['last'];
-        $card = $_POST['card'];
+
+        if(!isset($username) || !isset($pass) || !isset($email) || !isset($name)) $this->redirect("/");
 
         $user->setUsername($username);
         $user->setPassword($pass);
         $user->setEmail($email);
         $user->setName($name);
         $user->setLast($last);
-        $user->setCard($card);
 
         if(!$user->findUser()){
 
             if(!$user->signup()){
 
-                echo "<script language= 'javascript'>";
-                echo "alert('error data');";
-                echo "</script>";
                 $this->redirect('?controller=index&action=signup');
                 exit;
             }
@@ -105,21 +87,10 @@ class userController extends  baseController{
 
         }else{
 
-            echo "<script language= 'javascript'>";
-            echo "alert('exist data our database');";
-            echo "</script>";
             $this->redirect('controller=index&action=signup');
             exit;
         }
     }
-
-    public function clientsAction(){
-
-        $this->setTitle('Clients');
-        $user = new user();
-        return array('config',$user->getUsers());
-    }
 }
-
 $manager = new userController();
 $manager->render();
