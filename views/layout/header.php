@@ -51,13 +51,13 @@
                           <?php if(!$this->getUser()){?>
                               <form class="navbar-form navbar-right" action="/index.php?controller=user&action=login" method="POST">
                                   <div class="form-group">
-                                      <input type="text" placeholder="Username" class="form-control" name="user" REQUIRED>
+                                      <input type="text" placeholder="Username" class="form-control input-circle" name="user" REQUIRED>
                                   </div>
                                   <div class="form-group">
-                                      <input type="password" placeholder="Password" class="form-control" name="pass" REQUIRED>
+                                      <input type="password" placeholder="Password" class="form-control input-circle" name="pass" REQUIRED>
                                   </div>
-                                  <input type="submit" class="btn btn-success" value="LOG IN" name="SignIn">
-                                  <a href="/index.php?controller=index&action=signup" class="btn btn-default">SIGN UP</a>
+                                  <input type="submit" class="btn btn-success btn-circle" value="LOGIN" name="SignIn">
+                                  <a href="/index.php?controller=index&action=signup" class="btn btn-primary btn-circle">SIGN UP</a>
                               </form>
                           <?php }else{?>
                           <ul class="nav navbar-nav pull-right">
@@ -68,16 +68,16 @@
                               <li class="dropdown dropdown-user">
                                   <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                       <img alt="" class="img-circle" src="img/media.ico">
-                                      <span class="username username-hide-mobile">Admin</span>
+                                      <span class="username username-hide-mobile text-capitalize"><?php echo $this->getUser()['name']; ?></span>
                                   </a>
                                   <ul class="dropdown-menu dropdown-menu-default">
                                       <li>
                                           <a href="index.php?controller=user&action=profile">
-                                              <i class="fa fa-user"></i> My Profile </a>
+                                              <i class="glyphicon glyphicon-user"></i> My Profile</i></a>
                                       </li>
                                       <li>
                                           <a href="#">
-                                              <i class="icon-calendar"></i> My Calendar </a>
+                                              <i class="glyphicon glyphicon-calendar"></i> My Calendar </a>
                                       </li>
                                       <li>
                                           <a href="#">
@@ -88,7 +88,7 @@
                                       <li class="divider"> </li>
                                       <li>
                                           <a href="/index.php?controller=user&action=logout">
-                                              <i class="fa fa-power-off"></i> Log Out </a>
+                                              <i class="glyphicon glyphicon-log-out"></i>Log Out</a>
                                       </li>
                                   </ul>
                               </li>
@@ -124,7 +124,7 @@
                                   </a>
                               </li>
                               <li aria-haspopup="true" class="menu-dropdown mega-menu-dropdown  mega-menu-full">
-                                  <a href="#" class="color-nav"> Contact
+                                  <a href="index.php?controller=movie&action=upload" class="color-nav"> Contact
                                       <span class="arrow"></span>
                                   </a>
                               </li>

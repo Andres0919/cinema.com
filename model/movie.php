@@ -5,6 +5,7 @@ use Libs\cinemadb;
 
 class movie extends cinemadb
 {
+    private $id;
     private $name;
     private $info;
     private $rating;
@@ -16,6 +17,17 @@ class movie extends cinemadb
     function __construct() {
 
         $this->connect();
+    }
+
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
     }
 
     public function getName()
@@ -88,9 +100,15 @@ class movie extends cinemadb
         $this->status = $status;
     }
 
+    public function getMovie(){
+
+        $result = $this->runQuery("SELECT * FROM movies WHERE id = $this->id");
+        return mysqli_fetch_assoc($result);
+    }
+
     public function getMovies(){
 
-        $result = $this->runQuery("SELECT id, title FROM movies");
+        $result = $this->runQuery("SELECT id, title, url_img FROM movies");
         return mysqli_fetch_assoc($result);
 
     }

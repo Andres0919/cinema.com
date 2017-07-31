@@ -1,9 +1,4 @@
 <div class="container-fluid">
-<!--                <div class="intro-text">-->
-<!--                    <div class="intro-lead-in">Welcome To Promocinal!</div>-->
-<!--                    <div class="intro-heading">What would you like to watch today?</div>-->
-<!--                </div>-->
-
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -15,25 +10,23 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner carousel-home">
             <div class="item active">
-                <img src="img/cinema-22.jpg" alt="Los Angeles" >
+                <img src="img/cinema-22.jpg" alt="" >
             </div>
 
             <div class="item">
-                <img src="img/film.jpg" alt="Chicago">
+                <img src="img/film.jpg" alt="">
             </div>
 
             <div class="item">
-                <img src="img/film1.JPG" alt="New York">
+                <img src="img/film1.JPG" alt="">
             </div>
         </div>
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -59,7 +52,7 @@
                                     <?php } ?>
                                 <?php $times++ ?>
                                 <div class="col-md-3">
-                                    <a  href="#"><img alt="" src="img/file_image.jpg"></a>
+                                    <a href="index.php?controller=movie&action=movie&movie=<?php echo $movie['id']; ?>"><img alt="" src="<?php echo $movie['url_img']; ?>"></a>
                                 </div>
                                 <?php } ?>
                             </div>
@@ -81,50 +74,19 @@
                     <div class="carousel-inner media-theaters">
                         <div class="item  active">
                             <div class="row">
-                                <div class="col-md-3">
-                                    <a  href="#"><img alt="" src="img/file_image.jpg"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a  href="#"><img alt="" src="img/download%20(1).jpg"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a  href="#"><img alt="" src="img/download.jpg"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a  href="#"><img alt="" src="img/IMAGEN-16099740-2.jpg"></a>
-                                </div>
+                                <?php $times = 0;?>
+                                <?php foreach($parameters as $movie){ ?>
+                                <?php if($times%4 == 0 && $times != 0){?>
                             </div>
                         </div>
                         <div class="item">
                             <div class="row">
+                                <?php } ?>
+                                <?php $times++ ?>
                                 <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
+                                    <a href="index.php?controller=movie&action=movie&movie=<?php echo $movie['id']; ?>"><img alt="" src="<?php echo $movie['url_img']; ?>"></a>
                                 </div>
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
-                                <div class="col-md-3">
-                                    <a href="#"><img alt="" src="http://placehold.it/150x150"></a>
-                                </div>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>

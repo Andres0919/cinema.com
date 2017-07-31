@@ -1,14 +1,14 @@
-<div class="container jumbotron fix-container">
+<div class="container jumbotron fix-container margin-top-15 margin-bottom-15">
     <div class="row">
         <?php $this->sidebar() ?>
         <div class="col-sm-10 col-md-8">
-            <div class="well">
+            <div class="portlet light">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
                         <div class="profile">
                             <div class="col-sm-12">
-                                <div class="col-xs-10 col-sm-8">
-                                    <h2 class="text-capitalize text-success"><?php echo $this->getUser()['3']  ." ". $this->getUser()['last_name']; ?></h2>
+                                <div class="col-xs-10 col-sm-8 profile-usertitle-name ">
+                                    <h2 class="text-capitalize visible-lg"><?php echo $this->getUser()['3']  ." ". $this->getUser()['last_name']; ?></h2>
                                     <p><strong>Role: </strong> <?php echo $this->getUser()['13']?>. </p>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 text-center">

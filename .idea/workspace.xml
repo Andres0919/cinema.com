@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/views/movieView.php" line="22" />
+    <bookmark url="file://$PROJECT_DIR$/views/movieView.php" line="26" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9313039c-ff96-4527-b90a-5bf03f032ffc" name="Default" comment="" />
@@ -34,28 +34,40 @@
       <file leaf-file-name="movieController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/movieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.272727">
-              <caret line="14" column="38" selection-start-line="13" selection-start-column="29" selection-end-line="14" selection-end-column="38" />
+            <state vertical-scroll-proportion="-6.9545455">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexView.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="indexView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/indexView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0037383179">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.090909">
+              <caret line="86" column="118" selection-start-line="86" selection-start-column="118" selection-end-line="86" selection-end-column="118" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="baseController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controller/baseController.php">
+      <file leaf-file-name="movieView.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/movieView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.363636">
-              <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="19" />
+            <state vertical-scroll-proportion="-11.818182">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="moviesView.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/moviesView.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48598132">
+              <caret line="29" column="170" selection-start-line="29" selection-start-column="170" selection-end-line="29" selection-end-column="170" />
               <folding />
             </state>
           </provider>
@@ -64,8 +76,8 @@
       <file leaf-file-name="indexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/indexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.681818">
-              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state vertical-scroll-proportion="-10.045455">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,10 +86,27 @@
       <file leaf-file-name="movie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/movie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.636364">
-              <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+            <state vertical-scroll-proportion="-14.272727">
+              <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
               <folding>
-                <marker date="1501294042197" expanded="true" signature="1527:1555" placeholder="SELECT id, t..movies..." />
+                <marker date="1501473095036" expanded="true" signature="1680:1706" placeholder="SELECT * FRO..movie..." />
+                <marker date="1501473095036" expanded="true" signature="1680:1712" placeholder="SELECT * FRO..movie..." />
+                <marker date="1501473095036" expanded="true" signature="1680:1713" placeholder="SELECT * FRO..movie..." />
+                <marker date="1501473095036" expanded="true" signature="1845:1882" placeholder="SELECT id, t..movies..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/user.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.181818">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <marker date="1500695292205" expanded="true" signature="869:966" placeholder="SELECT * FRO..users..." />
+                <marker date="1500695292205" expanded="true" signature="1103:1155" placeholder="SELECT * FRO..users..." />
+                <marker date="1500695292205" expanded="true" signature="1290:1465" placeholder="INSERT INTO ..." />
               </folding>
             </state>
           </provider>
@@ -96,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/signUp.php" />
         <option value="$PROJECT_DIR$/controller/reserva.php" />
         <option value="$PROJECT_DIR$/controller/signUp.php" />
         <option value="$PROJECT_DIR$/controller/signup.php" />
@@ -114,7 +142,6 @@
         <option value="$PROJECT_DIR$/libs/header.php" />
         <option value="$PROJECT_DIR$/controller/checkSignup.php" />
         <option value="$PROJECT_DIR$/libs/cinemadb.php" />
-        <option value="$PROJECT_DIR$/views/signupView.php" />
         <option value="$PROJECT_DIR$/views/editCinemaView.php" />
         <option value="$PROJECT_DIR$/views/reserveView.php" />
         <option value="$PROJECT_DIR$/views/configView.php" />
@@ -128,25 +155,27 @@
         <option value="$PROJECT_DIR$/js/customer.js" />
         <option value="$PROJECT_DIR$/views/layout/profilesidebar.php" />
         <option value="$PROJECT_DIR$/controller/baseController.php" />
-        <option value="$PROJECT_DIR$/views/profileView.php" />
-        <option value="$PROJECT_DIR$/views/layout/sidebar.php" />
         <option value="$PROJECT_DIR$/model/cinema.php" />
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/model/user.php" />
         <option value="$PROJECT_DIR$/controller/userController.php" />
         <option value="$PROJECT_DIR$/css/cubeportfolio.css" />
         <option value="$PROJECT_DIR$/css/cubeportfolio.min.css" />
-        <option value="$PROJECT_DIR$/views/layout/footer.php" />
-        <option value="$PROJECT_DIR$/controller/movieController.php" />
-        <option value="$PROJECT_DIR$/css/customer.css" />
-        <option value="$PROJECT_DIR$/views/moviesView.php" />
-        <option value="$PROJECT_DIR$/views/movieView.php" />
-        <option value="$PROJECT_DIR$/views/layout/header.php" />
         <option value="$PROJECT_DIR$/controller/cinemaController.php" />
         <option value="$PROJECT_DIR$/views/theatersView.php" />
         <option value="$PROJECT_DIR$/controller/indexController.php" />
+        <option value="$PROJECT_DIR$/views/layout/sidebar.php" />
+        <option value="$PROJECT_DIR$/views/profileView.php" />
+        <option value="$PROJECT_DIR$/css/customer.css" />
+        <option value="$PROJECT_DIR$/views/signupView.php" />
+        <option value="$PROJECT_DIR$/views/layout/header.php" />
+        <option value="$PROJECT_DIR$/views/layout/footer.php" />
+        <option value="$PROJECT_DIR$/views/uploadMovieView.php" />
+        <option value="$PROJECT_DIR$/controller/movieController.php" />
         <option value="$PROJECT_DIR$/model/movie.php" />
+        <option value="$PROJECT_DIR$/views/movieView.php" />
         <option value="$PROJECT_DIR$/views/indexView.php" />
+        <option value="$PROJECT_DIR$/views/moviesView.php" />
       </list>
     </option>
   </component>
@@ -189,7 +218,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,12 +293,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cinema.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cinema.com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,13 +321,15 @@
     <property name="FullScreen" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/fonts" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/fonts" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -346,19 +391,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16691843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17975831" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32136753" sideWeight="0.5060423" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -380,41 +425,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/layout.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69201523">
-          <caret line="0" column="4013" selection-start-line="0" selection-start-column="4013" selection-end-line="0" selection-end-column="4013" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/profile.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/components.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/plugins.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-fileinput.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34649912">
@@ -440,13 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8299065">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/sidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82429904">
-          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -590,20 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68411213">
-          <caret line="65" column="26" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/customer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="166" column="24" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/default.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="48.451614">
@@ -646,52 +635,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/profileView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.772727">
-          <caret line="121" column="84" selection-start-line="121" selection-start-column="84" selection-end-line="121" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controller/cinemaController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.863636">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/theatersView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="336" selection-start-line="0" selection-start-column="336" selection-end-line="0" selection-end-column="336" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/movieView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41682243">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/moviesView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65607476">
-          <caret line="27" column="147" selection-start-line="27" selection-start-column="147" selection-end-line="27" selection-end-column="147" />
           <folding />
         </state>
       </provider>
@@ -704,56 +651,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/movieController.php">
+    <entry file="file://$PROJECT_DIR$/controller/baseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.272727">
-          <caret line="14" column="38" selection-start-line="13" selection-start-column="29" selection-end-line="14" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/profileView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21869159">
+          <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/form-samples.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/customer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2172352">
+          <caret line="178" column="29" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21869159">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-fileinput.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap-fileinput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5140187">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/signupView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-36.045456">
+          <caret line="61" column="144" selection-start-line="61" selection-start-column="144" selection-end-line="61" selection-end-column="144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/uploadMovieView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9545455">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/theatersView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="336" selection-start-line="0" selection-start-column="336" selection-end-line="0" selection-end-column="336" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8299065">
+        <state vertical-scroll-proportion="-21.181818">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <marker date="1500695292205" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1500695292205" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1500695292205" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1500695292205" expanded="true" signature="869:966" placeholder="SELECT * FRO..users..." />
+            <marker date="1500695292205" expanded="true" signature="1103:1155" placeholder="SELECT * FRO..users..." />
+            <marker date="1500695292205" expanded="true" signature="1290:1465" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/indexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.681818">
-          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state vertical-scroll-proportion="-10.045455">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/baseController.php">
+    <entry file="file://$PROJECT_DIR$/controller/movieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.363636">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="19" />
+        <state vertical-scroll-proportion="-6.9545455">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/movie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.636364">
-          <caret line="92" column="45" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
+        <state vertical-scroll-proportion="-14.272727">
+          <caret line="105" column="26" selection-start-line="105" selection-start-column="26" selection-end-line="105" selection-end-column="26" />
           <folding>
-            <marker date="1501294042197" expanded="true" signature="1527:1555" placeholder="SELECT id, t..movies..." />
+            <marker date="1501473095036" expanded="true" signature="1680:1706" placeholder="SELECT * FRO..movie..." />
+            <marker date="1501473095036" expanded="true" signature="1680:1712" placeholder="SELECT * FRO..movie..." />
+            <marker date="1501473095036" expanded="true" signature="1680:1713" placeholder="SELECT * FRO..movie..." />
+            <marker date="1501473095036" expanded="true" signature="1845:1882" placeholder="SELECT id, t..movies..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7102804">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/movieView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.818182">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/indexView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0037383179">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.090909">
+          <caret line="86" column="118" selection-start-line="86" selection-start-column="118" selection-end-line="86" selection-end-column="118" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/moviesView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48598132">
+          <caret line="29" column="170" selection-start-line="29" selection-start-column="170" selection-end-line="29" selection-end-column="170" />
           <folding />
         </state>
       </provider>
