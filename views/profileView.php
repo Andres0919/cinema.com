@@ -8,8 +8,8 @@
                         <div class="profile">
                             <div class="col-sm-12">
                                 <div class="col-xs-10 col-sm-8 profile-usertitle-name ">
-                                    <h2 class="text-capitalize visible-lg"><?php echo $this->getUser()['3']  ." ". $this->getUser()['last_name']; ?></h2>
-                                    <p><strong>Role: </strong> <?php echo $this->getUser()['13']?>. </p>
+                                    <h2 class="text-capitalize visible-lg"><?php echo $this->getUser()['name']  ." ". $this->getUser()['last_name']; ?></h2>
+                                    <p><strong>Role: </strong> <?php echo $this->getUser()['description']?>. </p>
                                 </div>
                                 <div class="col-xs-12 col-sm-4 text-center">
                                     <figure>

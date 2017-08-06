@@ -76,12 +76,21 @@ padding-left: 0;
 .carousel-home{
 
     height: 400px;
+    display: block;
 }
 
 
+.img-home{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
 .jumbotron{
 
-    margin-bottom: 0;
+    margin-bottom: 15px;
     padding: 0;
 }
 
@@ -89,7 +98,6 @@ padding-left: 0;
 .media-theaters{
 
     height: 100%;
-
 }
 
 /* carousel */
@@ -148,6 +156,11 @@ padding-left: 0;
     margin: 0 auto !important;
 }
 
+.img-home{
+
+    width: 100%;
+}
+
 .fix-container{
 
     display: flex;
@@ -167,10 +180,15 @@ hr{
     border:  1px  hidden;
 }
 
-.sign-actions{
+.fix-signup{
 
-    background-color: white !important;
+    margin-left: 20%;
 }
+.controls{
+
+    margin: 0 !important;
+}
+
 
 /*end container */
 

@@ -7,7 +7,7 @@ class movieController extends  baseController{
 
     public $title = 'Movie';
     public $default_action = 'movie';
-    public $private_actions = array('movie','billboard','schedule','reserve','config');
+    public $private_actions = array('billboard','schedule','reserve','config');
 
     public function movieAction(){
 

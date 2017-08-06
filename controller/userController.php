@@ -58,30 +58,36 @@ class userController extends  baseController{
 
     public function signupAction(){
 
-        $user = new user();
         $username = $_POST['user'];
-        $pass = $_POST['pass'];
-        $email = $_POST['email'];
         $name = $_POST['name'];
+        $pass = $_POST['pass'];
         $last = $_POST['last'];
+        $date = $_POST['date'];
+        $gender = $_POST['gender'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
 
         if(!isset($username) || !isset($pass) || !isset($email) || !isset($name)) $this->redirect("/");
 
+        $user = new user();
         $user->setUsername($username);
         $user->setPassword($pass);
-        $user->setEmail($email);
         $user->setName($name);
         $user->setLast($last);
+        $user->setDate($date);
+        $user->setGender($gender);
+        $user->setEmail($email);
+        $user->setPhone($phone);
 
         if(!$user->findUser()){
-
             if(!$user->signup()){
 
+                echo "hola";
+                die();
                 $this->redirect('?controller=index&action=signup');
                 exit;
             }
-            $user->insertRoleUser($user->findUser()['id']);
-            $this->setSessionUser( $user->login());
+            $this->setSessionUser($user->login());
             $this->redirect("controller=user&action=profile");
             exit;
 

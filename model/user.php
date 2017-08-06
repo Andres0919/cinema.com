@@ -9,8 +9,10 @@ class user extends cinemadb
     private $password;
     private $name;
     private $last;
-    private $card;
+    private $date;
+    private $gender;
     private $email;
+    private $phone;
     private $rol = 1;
 
 
@@ -42,7 +44,20 @@ class user extends cinemadb
         $this->email = $email;
     }
 
+    public function setDate($date)
+    {
+        $this->date = $date;
+    }
 
+    public function setGender($gender)
+    {
+        $this->gender = $gender;
+    }
+
+    public function setPhone($phone){
+
+        $this->phone = $phone;
+    }
 
     public function setUsername($username)
     {
@@ -70,7 +85,7 @@ class user extends cinemadb
 
     public function signup(){
 
-        $result = $this->runQuery("INSERT INTO users( username, password, name, last_name, card, email) VALUES ('$this->username', '$this->password', '$this->name', '$this->last', '$this->card', '$this->email')");
+        $result = $this->runQuery("INSERT INTO users( username, password, name, last_name, birthdate, gender, email, phone, roles_id) VALUES ('$this->username', '$this->password', '$this->name', '$this->last', '$this->date', '$this->gender', '$this->email', '$this->phone', $this->rol)");
         return $result;
     }
 

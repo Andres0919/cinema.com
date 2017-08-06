@@ -18,7 +18,7 @@
             </div>
         </div>
         <div id="js-grid-juicy-projects" class="cbp">
-            <?php foreach($parameters as $movie){ ?>
+            <?php foreach($parameters['movie'] as $movie){ ?>
             <div class="cbp-item graphic">
                 <div class="cbp-caption">
                     <div class="cbp-caption-defaultWrap">

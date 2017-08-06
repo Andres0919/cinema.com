@@ -4,7 +4,7 @@
             <div class="heading">
                 <h2 class="form-heading">Create account</h2><br />
             </div>
-            <div class="portlet box">
+            <div class="portlet box fix-signup">
                 <form class="form-horizontal" method="post" action="index.php?controller=user&action=signup">
             <!-- BEGIN FORM-->
                     <div class="form-body">
@@ -41,7 +41,7 @@
                             <label class="col-md-3 control-label">Birthdate</label>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="date" class="form-control spinner input-circle-left" value="<?php echo date("Y-m-d");?>">
+                                    <input type="date" name="date" class="form-control spinner input-circle-left" value="<?php echo date("Y-m-d");?>">
                                      <span class="input-group-addon input-circle-right">
                                         <i class="fa fa-calendar"></i>
                                     </span>
@@ -70,7 +70,7 @@
                             <label class="col-md-3 control-label">Phone</label>
                             <div class="col-md-4">
                                 <div class="input-group">
-                                    <input type="text" class="form-control input-circle-left" placeholder="Phone number">
+                                    <input type="number" name="phone" class="form-control input-circle-left" placeholder="Phone number">
                                     <span class="input-group-addon input-circle-right">
                                         <i class="fa fa-phone"></i>
                                     </span>

@@ -8,7 +8,7 @@
         <!-- SIDEBAR USER TITLE -->
         <div class="profile-usertitle">
             <div class="profile-usertitle-name text-capitalize"><?php echo $this->getsession()['user']['name'] . " " . $this->getsession()['user']['last_name'] ?> </div>
-            <div class="profile-usertitle-job"> Developer </div>
+            <div class="profile-usertitle-job"> <?php echo $this->getUser()['description']?> </div>
         </div>
         <!-- END SIDEBAR USER TITLE -->
         <!-- SIDEBAR MENU -->

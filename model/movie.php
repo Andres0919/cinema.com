@@ -109,7 +109,7 @@ class movie extends cinemadb
     public function getMovies(){
 
         $result = $this->runQuery("SELECT id, title, url_img FROM movies");
-        return mysqli_fetch_assoc($result);
+        return $result;
 
     }
 
